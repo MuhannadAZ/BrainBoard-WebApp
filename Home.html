@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>    
+<body>
+    
+      
+    <ul class="top-ul">
+        
+        <a href="#" class="bar-icon"  onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+        <li class="active top-li"><a href="home.html">Home</a></li>
+        <li class="top-li"><a href="post.html">Posts</a></li>
+        <li class="top-li"><a href="details.html">Feed</a></li>
+        <li class="top-li "><a href="policy.html">Policy</a></li>
+   
+        <li class="top-li"><span id="greeting"></span></li> <!-- Added for dynamic greeting -->
+    </ul>
+    <header class="img-header"> 
+        
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                
+                    
+            </nav>
+            <div class="brand">Brain Board</div>
+            <br>
+            <div class="para"><br><p>
+                Discover a new era of learning with our revolutionary <br>
+                study system website! Tailored to your needs, our platform
+                 transforms <br> studying into a seamless and enjoyable experience.
+                  Effortlessly create  personalized study schedules, access a wealth 
+                of educational resources, and collaborate with peers
+                . <br> Stay organized, stay motivated, and unlock your full 
+                academic potential with us!</p></div>
+        </div>
+        <!-- search bar-->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="everything">Everthing</option>
+                    <option value="titles">Titles</option>
+                    <option value="descriptions">Descriptions</option>
+                </select>
+                <input type="text" name="q" id="" placeholder="search ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+            
+        </div>
+
+
+    </header>
+    <div class="container">
+        <div class="subforum">
+            <div class="subforum-title">
+                <h1>Data Structures</h1>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h1><a href="">Description Title:</a></h1>
+                    <p>Description Content: Data structures are a way of organizing and storing data...</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>30 Posts | 20 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">Mohannad</a>
+                    <br> on <small>10 May 2024</small>
+                </div>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h1><a href="">Assignment 1:</a></h1>
+                    <p>Implement a linked list in C++...</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>15 Replies</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">Mansoor</a>
+                    <br> on <small>8 May 2024</small>
+                </div>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h1><a href="details.html">Discussion Group</a></h1>
+                    <p>Engage in lively discussions and share insights with fellow members.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>25 Posts | 15 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="#">Last post</a></b> by <a href="#">Mansoor</a>
+                    <br> on <small>7 May 2024</small>
+                </div>
+            
+            
+            </div>
+            <!-- Add more subforum-row sections for additional topics -->
+    
+
+                    <!-- /.subforum> -->
+         </div>
+         <hr class="subforum-devider"> 
+         <!--more-->
+            <div class="subforum">
+                <div class="subforum-title">
+                    <h1>Ethics in Computer Science</h1>
+                </div>
+                <div class="subforum-row">
+                    <div class="subforum-icon subforum-column center">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="subforum-description subforum-column">
+                        <h1><a href="">Introduction to Ethics</a></h1>
+                        <p>Description Content: This module explores the ethical implications of computer science...</p>
+                    </div>
+                    <div class="subforum-stats subforum-column center">
+                        <span>24 Posts | 15 Topics</span>
+                    </div>
+                    <div class="subforum-info subforum-column">
+                        <b><a href="">Last post</a></b> by <a href="">Mohannad</a>
+                        <br> on <small>5 May 2024</small>
+                    </div>
+                </div>
+                
+                <div class="subforum-row">
+                    <div class="subforum-icon subforum-column center">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="subforum-description subforum-column">
+                        <h1><a href="">Case Studies in Ethics</a></h1>
+                        <p>Description Content: Analyzing real-world cases where ethical considerations in computer science...</p>
+                    </div>
+                    <div class="subforum-stats subforum-column center">
+                        <span>15 Posts | 10 Topics</span>
+                    </div>
+                    <div class="subforum-info subforum-column">
+                        <b><a href="">Last post</a></b> by <a href="">Mansoor</a>
+                        <br> on <small>3 May 2024</small>
+                    </div>
+                </div>
+                <div class="subforum-row">
+                    <div class="subforum-icon subforum-column center">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="subforum-description subforum-column">
+                        <h1><a href="details.html">Discussion Group</a></h1>
+                        <p>Engage in lively discussions and share insights with fellow members.</p>
+                    </div>
+                    <div class="subforum-stats subforum-column center">
+                        <span>25 Posts | 15 Topics</span>
+                    </div>
+                    <div class="subforum-info subforum-column">
+                        <b><a href="#">Last post</a></b> by <a href="#">Mansoor</a>
+                        <br> on <small>7 May 2024</small>
+                    </div>
+          
+        
+                <!-- /.subforum> -->
+         </div>
+         <hr class="subforum-devider"> 
+         
+        
+         <!--more-->
+
+         <div class="subforum">
+            <div class="subforum-title">
+                <h1>Cybersecurity</h1>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h1><a href="">Introduction to Cybersecurity</a></h1>
+                    <p>Description Content: This module provides an overview of cybersecurity principles...</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>30 Posts | 20 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">Mansoor</a>
+                    <br> on <small>10 May 2024</small>
+                </div>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h1><a href="">Network Security</a></h1>
+                    <p>Description Content: Examining the techniques and technologies used to secure networks...</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>20 Posts | 12 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">Mohannad</a>
+                    <br> on <small>8 May 2024</small>
+                </div>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h1><a href="details.html">Discussion Group</a></h1>
+                    <p>Engage in lively discussions and share insights with fellow members.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>25 Posts | 15 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="#">Last post</a></b> by <a href="#">Mansoor</a>
+                    <br> on <small>7 May 2024</small>
+                </div>    
+             
+                    <!-- /.subforum> -->
+         </div>
+         <hr class="subforum-devider"> 
+         <!--more-->
+         <div class="subforum">
+            <div class="subforum-title">
+                <h1>Web Development</h1>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h1><a href="">Responsive Web Design</a></h1>
+                    <p>Description Content: Learn how to create websites that work on all devices, from desktops to smartphones.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>10 Posts | 5 topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">Mohannad</a>
+                    <br> on <small>2 April 2024</small>
+                </div>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h1><a href="">JavaScript Fundamentals</a></h1>
+                    <p>Description Content: Start your journey into JavaScript, the programming language of the web.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>15 Posts | 8 topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="">Last post</a></b> by <a href="">Mohannad</a>
+                    <br> on <small>10 April 2024</small>
+                </div>
+            </div>
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column center">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="subforum-description subforum-column">
+                    <h1><a href="details.html">Discussion Group</a></h1>
+                    <p>Engage in lively discussions and share insights with fellow members.</p>
+                </div>
+                <div class="subforum-stats subforum-column center">
+                    <span>25 Posts | 15 Topics</span>
+                </div>
+                <div class="subforum-info subforum-column">
+                    <b><a href="#">Last post</a></b> by <a href="#">Mansoor</a>
+                    <br> on <small>7 May 2024</small>
+                </div>
+            <!-- Add more subforum-row sections for additional topics -->
+        </div>
+        
+    </div></div>
+    <hr class="subforum-devider">
+ </div></div>
+    
+    <!--Forum info-->
+       <div class="forum-info">
+            <div class="chart">
+                Brain Board - Stats &nbsp;<i class="fa fa-bar-chart"></i>
+            </div>
+            <div>
+                <span><u>32</u> Posts in <u>8</u> topics by 63 Users</span><br>
+                <span>Latest Posts: <b><a href="#">Ethics in AI
+                </a></b> on 11 May 2024 by <a href="#">Mohannad</a></span>
+            </div>
+       </div>
+    </div>
+
+ 
+       <footer>
+        <span>&copy; &nbsp; Imam mohammed bin saud university | All rights Reserved.</span>
+       </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

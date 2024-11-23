@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyForum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>    
+<body>
+    <ul class="top-ul">
+        
+        <a href="#" class="bar-icon"  onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+        <li class=" top-li"><a href="home.html">Home</a></li>
+        <li class="active top-li"><a href="post.html">Posts</a></li>
+        <li class="top-li"><a href="details.html">Details</a></li>
+   
+        <li class="top-li"><span id="greeting"></span></li> <!-- Added for dynamic greeting -->
+    </ul>
+    
+    <header class="img-header">
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                
+                    
+            </nav>
+            <div class="brand">Brain Board</div>
+            <br>
+            <div class="para"><br><p>
+                Discover a new era of learning with our revolutionary <br>
+                study system website! Tailored to your needs, our platform
+                 transforms <br> studying into a seamless and enjoyable experience.
+                  Effortlessly create  personalized study schedules, access a wealth 
+                of educational resources, and collaborate with peers
+                . <br> Stay organized, stay motivated, and unlock your full 
+                academic potential with us!</p></div>
+        </div>
+        <!-- search bar-->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="everything">Everthing</option>
+                    <option value="titles">Titles</option>
+                    <option value="descriptions">Descriptions</option>
+                </select>
+                <input type="text" name="q" id="" placeholder="search ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!--nav-->
+        <div class="navigate">
+            <span><a href="#">My Forum - Forums</a> >> <a href="#">Computer Science</a></span>
+        </div>
+        <div class="posts-table">
+            <div class="table-head">
+                <div class="status">Status</div>
+                <div class="subjects">Subjects</div>
+                <div class="replies">Replies/Views</div>
+                <div class="last-reply">Last Reply</div>
+            </div>
+            <div class="table-row">
+                <div class="status"><i class="fa fa-fire"></i></div>
+                <div class="subjects"><a href="#">Ethics in AI</a><br><span>Started by <b><a href="#">Mansoor</a></b></span></div>
+                <div class="replies">5 replies <br>56 views</div>
+                <div class="last-reply">Nov 5, 2023<br>By <b><a href="#">Mohannad</a></b></div>
+            </div>
+        </div>
+        <div class="posts-table">
+            <div class="table-head">
+                <div class="status">Status</div>
+                <div class="subjects">Subjects</div>
+                <div class="replies">Replies/Views</div>
+                <div class="last-reply">Last Reply</div>
+            </div>
+            <div class="table-row">
+                <div class="status"><i class="fa fa-book"></i></div>
+                <div class="subjects"><a href="#">Machine Learning Basics</a><br><span>Started by <b><a href="#">Mansoor</a></b></span></div>
+                <div class="replies">3 replies <br>30 views</div>
+                <div class="last-reply">Oct 30, 2023<br>By <b><a href="#">Mohannad</a></b></div>
+            </div>
+        </div>
+        <div class="posts-table">
+            <div class="table-head">
+                <div class="status">Status</div>
+                <div class="subjects">Subjects</div>
+                <div class="replies">Replies/Views</div>
+                <div class="last-reply">Last Reply</div>
+            </div>
+            <div class="table-row">
+                <div class="status"><i class="fa fa-book"></i></div>
+                <div class="subjects"><a href="#">Cybersecurity Threats</a><br><span>Started by <b><a href="#">Mohannad</a></b></span></div>
+                <div class="replies">8 replies <br>42 views</div>
+                <div class="last-reply">Oct 25, 2023<br>By <b><a href="#">Mansoor</a></b></div>
+            </div>
+        </div>
+        <div class="posts-table">
+            <div class="table-head">
+                <div class="status">Status</div>
+                <div class="subjects">Subjects</div>
+                <div class="replies">Replies/Views</div>
+                <div class="last-reply">Last Reply</div>
+            </div>
+            <div class="table-row">
+                <div class="status"><i class="fa fa-book"></i></div>
+                <div class="subjects"><a href="#">Data Structures Fundamentals</a><br><span>Started by <b><a href="#">Mansoor</a></b></span></div>
+                <div class="replies">6 replies <br>38 views</div>
+                <div class="last-reply">Oct 20, 2023<br>By <b><a href="#">Mohannad</a></b></div>
+            </div>
+        </div>
+        <div class="posts-table">
+            <div class="table-head">
+                <div class="status">Status</div>
+                <div class="subjects">Subjects</div>
+                <div class="replies">Replies/Views</div>
+                <div class="last-reply">Last Reply</div>
+            </div>
+            <div class="table-row">
+                <div class="status"><i class="fa fa-book"></i></div>
+                <div class="subjects"><a href="#">Artificial Intelligence Applications</a><br><span>Started by <b><a href="#">Mohannad</a></b></span></div>
+                <div class="replies">4 replies <br>22 views</div>
+                <div class="last-reply">Oct 15, 2023<br>By <b><a href="#">Mansoor</a></b></div>
+            </div>
+        </div>
+        </div></div>
+        
+    <div class="note">
+        <span>
+            <i class="fa fa-fire"></i>&nbsp; high Engagement Topic <br>
+        </span>
+        <span>
+            <i class="fa fa-book"></i>&nbsp; low Engagement Topic
+        </span>
+       
+    </div>
+       <footer>
+        <span>&copy; &nbsp; Imam mohammed bin saud university | All rights Reserved.</span>
+       </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

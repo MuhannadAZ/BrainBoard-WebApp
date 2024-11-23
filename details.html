@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>    
+<body>
+    <ul class="top-ul">
+        
+        <a href="#" class="bar-icon"  onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+        <li class=" top-li"><a href="home.html">Home</a></li>
+        <li class="top-li"><a href="post.html">Posts</a></li>
+        <li class="active top-li"><a href="details.html">Feed</a></li>
+        <li class="top-li "><a href="policy.html">Policy</a></li>
+   
+        <li class="top-li"><span id="greeting"></span></li> <!-- Added for dynamic greeting -->
+    </ul>
+    <header class="img-header">
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                
+                    
+            </nav>
+            <div class="brand">Brain Board</div>
+            <br>
+            <div class="para"><br><p>
+                Discover a new era of learning with our revolutionary <br>
+                study system website! Tailored to your needs, our platform
+                 transforms <br> studying into a seamless and enjoyable experience.
+                  Effortlessly create  personalized study schedules, access a wealth 
+                of educational resources, and collaborate with peers
+                . <br> Stay organized, stay motivated, and unlock your full 
+                academic potential with us!</p></div>
+        </div>
+        <!-- search bar-->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="everything">Everthing</option>
+                    <option value="titles">Titles</option>
+                    <option value="descriptions">Descriptions</option>
+                </select>
+                <input type="text" name="q" id="" placeholder="search ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!--nav-->
+       
+       <!--show comment-->
+       <div class="comment-container">
+        <div class="head">
+            <div class="users-com">Latest Comments</div>
+            
+        </div>
+
+        <div class="body">
+            <div class="author">
+                <div class="AnotherUser"><a href="#"><b> Mohannad</b></a></div>
+                <div> <b>Student</b></div>
+                
+            </div>
+            <div class="content">
+                <br>
+                What are some common operations performed on a stack data structure, 
+                <br>and how do they differ from operations on a queue?
+                
+                <div class="comment ">
+                    
+                    <button onclick="showReply('post 1')">Reply</button>
+                    
+                </div>
+            </div>
+           </div> 
+        
+        <div>
+        </div>
+        </div>
+        <hr class="subforum-devider">
+
+        <div class="body">
+            <div class="author">
+                <div class="AnotherUser"><a href="#"><b>Mansoor</b></a></div>
+                <div><b>Student</b></div>
+                
+            </div>
+            <div class="content">
+                <br>
+                How does the use of hashing improve the efficiency of searching algorithms?
+    
+                
+                <div class="comment">
+                    <button onclick="showReply('post 2')">Reply</button>
+                </div>
+            </div>
+        </div>
+        <hr class="subforum-devider">
+
+        <div class="body">
+            <div class="author">
+                <div class="AnotherUser"><a href="#"><b>Mansoor</b></a></div>
+                <div><b>Student</b></div>
+                
+            </div>
+            <div class="content">
+                <br>
+                Can you explain the concept of dynamic programming and provide an example <br>
+                 of its application in computer science?
+                
+                <div class="comment">
+                    <button onclick="showReply('post 3')">Reply</button>
+                </div>
+            </div>
+        </div>
+        <hr class="subforum-devider">
+
+        <div class="body">
+            <div class="author">
+                <div class="AnotherUser"><a href="#"><b>Mohannad</b></a></div>
+                <div><b>Student</b></div>
+                
+            </div>
+            <div class="content">
+                <br>
+                How does the use of recursion impact the efficiency of algorithms,<br>
+                 particularly in the context of tree traversal?
+                
+                <div class="comment">
+                    <button onclick="showReply('post 4')">Reply</button>
+                </div>
+            </div>
+        </div>
+
+        <hr class="subforum-devider">
+
+        <div class="body">
+            <div class="author">
+                <div class="AnotherUser"><a href="#"><b>Mansoor</b></a></div>
+                <div><b>Student</b></div>
+                
+            </div>
+            <div class="content">
+                <br>
+                What are some key considerations in designing efficient <br> data structures for handling large datasets?
+                
+                <div class="comment">
+                    <button onclick="showReply('post 5')">Reply</button>
+                </div>
+                
+            </div>
+        </div>
+            
+        </div>
+
+        <div class="comment-area hide" id="reply-area">
+            <textarea name="comment" id="comment-text" placeholder="reply here..."></textarea>
+            <input type="hidden" id="post-id" value=""> <!-- Hidden input to store post ID -->
+            <input type="button" name="submit" id="submit-reply" value="submit">
+        </div>
+    </div>
+    <button class="btn" onclick="openModal()">Show User Agreement</button>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Terms and Conditions
+
+    </h2>
+    <p class="agreement">Welcome to Brain Board, <br> the innovative study system website dedicated to enhancing your learning experience. <br>
+         By using our platform, you acknowledge and agree to the following privacy and confidentiality terms</p>
+    <p class="agreement">Data Collection: We collect personal information, such as your name and email address, <br>
+         to create and manage your account. We may also collect non-personal information, such as your IP address and browser type, <br>
+          for analytics and security purposes.
+        Data Usage: Your personal information is used to personalize your experience on our platform,
+         <br> including providing tailored study recommendations and communication about your account. Non-personal information is used for analyzing trends, administering the site, and improving our services. <br>
+        Data Security: We implement industry-standard security measures to protect your personal information from unauthorized access, <br>
+         disclosure, alteration, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure, <br> and we cannot guarantee absolute security.
+        Confidentiality: We respect the confidentiality of your study materials, notes, and contributions to the platform. <br>
+         We do not share this information with third parties unless required by law or with your explicit consent.
+        Data Retention: We retain your personal information for as long as necessary to fulfill the purposes outlined in this agreement or as required by law. <br>
+         You may request the deletion of your account and associated data at any time.
+        Communication: By using our platform, you consent to receive communications from us, including emails, messages, and notifications related to your account and the services we provide. <br>
+         You can manage your communication preferences in your account settings.
+        Third-Party Services: Our platform may contain links to third-party websites or services that are not owned or controlled by us. <br>
+         We are not responsible for the privacy practices or content of these third parties.
+        Changes to Privacy Policy: We reserve the right to update or modify this privacy policy at any time. We will notify you of any changes by posting the new policy on this page. <br>
+         Your continued use of the platform after any such changes constitutes your acceptance of the new policy. <br>
+        By using Brain Board, you agree to abide by this privacy and confidentiality agreement. <br> If you have any questions or concerns about our privacy practices, please contact us at contact@brainboard.com.
+        <br> 
+        Thank you for choosing Brain Board as your study partner. We look forward to helping you unlock your full academic potential!</p>
+        <button class="btn btn-secondary" onclick="acceptLicense()">Accept</button>
+  </div>
+</div>
+       <footer>
+        <span>&copy; &nbsp; Imam mohammed bin saud university | All rights Reserved.</span>
+       </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

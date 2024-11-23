@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyForum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>    
+<body>
+    <ul class="top-ul">
+        
+        <a href="#" class="bar-icon"  onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+        <li class=" top-li"><a href="home.html">Home</a></li>
+        <li class="top-li"><a href="post.html">Posts</a></li>
+        <li class="active top-li"><a href="details.html">Details</a></li>
+   
+        <li class="top-li"><span id="greeting"></span></li> <!-- Added for dynamic greeting -->
+    </ul>
+    <header class="img-header">
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                
+                    
+            </nav>
+            <div class="brand">Brain Board</div>
+            <br>
+            <div class="para"><br><p>
+                Discover a new era of learning with our revolutionary <br>
+                study system website! Tailored to your needs, our platform
+                 transforms <br> studying into a seamless and enjoyable experience.
+                  Effortlessly create  personalized study schedules, access a wealth 
+                of educational resources, and collaborate with peers
+                . <br> Stay organized, stay motivated, and unlock your full 
+                academic potential with us!</p></div>
+        </div>
+        <!-- search bar-->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="everything">Everthing</option>
+                    <option value="titles">Titles</option>
+                    <option value="descriptions">Descriptions</option>
+                </select>
+                <input type="text" name="q" id="" placeholder="search ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!--nav-->
+       
+       <!--show comment-->
+        <div class="comment-container">
+            <div class="head">
+                <div class="author">Author</div>
+                <div class="content">Comments</div>
+            </div>
+
+            <div class="body">
+                <div class="author">
+                    <div class="AnotherUser"><a href="#">Mohannad</a></div>
+                    <div>Student</div>
+                    
+                </div>
+                <div class="content">
+                    What are some common operations performed on a stack data structure, 
+                    <br>and how do they differ from operations on a queue?
+                    
+                    <div class="comment">
+                        <button onclick="showReply('post 1')">Reply</button>
+                    </div>
+                </div>
+                
+            </div>
+            <hr class="subforum-devider">
+
+            <div class="body">
+                <div class="author">
+                    <div class="AnotherUser"><a href="#">Mansoor</a></div>
+                    <div>Student</div>
+                    
+                </div>
+                <div class="content">
+                    How does the use of hashing improve the efficiency of searching algorithms?
+        
+                    
+                    <div class="comment">
+                        <button onclick="showReply('post 2')">Reply</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="subforum-devider">
+
+            <div class="body">
+                <div class="author">
+                    <div class="AnotherUser"><a href="#">Mansoor</a></div>
+                    <div>Student</div>
+                    
+                </div>
+                <div class="content">
+                    Can you explain the concept of dynamic programming and provide an example <br>
+                     of its application in computer science?
+                    
+                    <div class="comment">
+                        <button onclick="showReply('post 3')">Reply</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="subforum-devider">
+
+            <div class="body">
+                <div class="author">
+                    <div class="AnotherUser"><a href="#">Mohannad</a></div>
+                    <div>Student</div>
+                    
+                </div>
+                <div class="content">
+                    How does the use of recursion impact the efficiency of algorithms,<br>
+                     particularly in the context of tree traversal?
+                    
+                    <div class="comment">
+                        <button onclick="showReply('post 4')">Reply</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="subforum-devider">
+
+            <div class="body">
+                <div class="author">
+                    <div class="AnotherUser"><a href="#">Mansoor</a></div>
+                    <div>Student</div>
+                    
+                </div>
+                <div class="content">
+                    What are some key considerations in designing efficient <br> data structures for handling large datasets?
+                    
+                    <div class="comment">
+                        <button onclick="showReply('post 5')">Reply</button>
+                    </div>
+                    <div class="reply">
+                        You:<br>this is my comment
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="comment-area hide" id="reply-area">
+            <textarea name="comment" id="comment-text" placeholder="reply here..."></textarea>
+            <input type="hidden" id="post-id" value=""> <!-- Hidden input to store post ID -->
+            <input type="button" name="submit" id="submit-reply" value="submit">
+        </div>
+        
+    </div>
+   
+       <footer>
+        <span>&copy; &nbsp; Imam mohammed bin saud university | All rights Reserved.</span>
+       </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
