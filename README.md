@@ -32,5 +32,5 @@ Policy
 ## 💻 Getting Started
 Clone the repository:
 ```bash
-git clone https://github.com/yourusername/brainboard.git
+git clone https://github.com/MuhannadAZ/brainboard.git
 
